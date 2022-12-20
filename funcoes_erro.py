@@ -1,7 +1,5 @@
 def erro_3x3(a_lista, b_lista, c_lista, verificacao):
     """verifica se a casa já foi preenchida ou se o 'input' está de acordo com o que se foi pedido"""
-    # to-do:
-    # fazer essa função ler qualquer tabuleiro (3x3,4x4x,5x5)
 
     # erro: ver se há só números
     alfabeto_minusculas = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h',
@@ -32,7 +30,7 @@ def erro_3x3(a_lista, b_lista, c_lista, verificacao):
     # erro: ver se é um número válido e se é uma casa do jogo
 
     # esse try e except é porque toda vez que o input era \ ele não lia como caractere
-    # digia que não dava para converter \ para int
+    # era dito que não dava para converter \ para int
     # (não achei uma maneira de converte \ para uma string e veridicar \ em 'if erro_letras != 0:')
     # isso se dava ao fato de não conseguir colocar o \ para ser lido como caractere
     # fazendo esse try e except resolvemos esse problema com o \ não ser lido como caractere
@@ -152,8 +150,6 @@ def erro_3x3(a_lista, b_lista, c_lista, verificacao):
 
 def erro_4x4(a_lista, b_lista, c_lista, d_lista, verificacao):
     """verifica se a casa já foi preenchida ou se o 'input' está de acordo com o que se foi pedido"""
-    # to-do:
-    # fazer essa função ler qualquer tabuleiro (3x3,4x4x,5x5)
 
     # erro: ver se há só números
     alfabeto_minusculas = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h',
@@ -364,8 +360,6 @@ def erro_4x4(a_lista, b_lista, c_lista, d_lista, verificacao):
 
 def erro_5x5(a_lista, b_lista, c_lista, d_lista, e_lista, verificacao):
     """verifica se a casa já foi preenchida ou se o 'input' está de acordo com o que se foi pedido"""
-    # to-do:
-    # fazer essa função ler qualquer tabuleiro (3x3,4x4x,5x5)
 
     # erro: ver se há só números
     alfabeto_minusculas = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h',
