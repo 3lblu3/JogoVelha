@@ -1,5 +1,6 @@
 import funcoes_erro
 import funcoes_ganhador
+
 # 3x3 jogo
 def jogada_3x3(nome1, nome2, n_partidas):
     """
@@ -17,8 +18,6 @@ def jogada_3x3(nome1, nome2, n_partidas):
         # declaração de variáveis para lá na frente substituir por 0 ou 1
         # jogador1 == 0
         # jogador2 == 1
-        # jogador1 == jogadas(1,3,5,7,9)
-        # jogador2 == jogadas(2,4,6,8)
         a_lista = [11, 12, 13]
         b_lista = [21, 22, 23]
         c_lista = [31, 32, 33]
@@ -32,16 +31,16 @@ def jogada_3x3(nome1, nome2, n_partidas):
         n_jogada = 1
         while n_jogada <= 9:
             contador = n_jogada % 2
-            # se cantador != 0 -> jogada ímpar -> jogador1 -> 0
-            # se cantador == 0 -> jogada par -> jogador2 -> 1
+            # se contador != 0 -> jogada ímpar -> jogador1 -> 0
+            # se contador == 0 -> jogada par -> jogador2 -> 1
             if contador != 0:
                 jogando = input(f'{nome1}, digite sua jogada linhaXcoluna (11, 21, 23, ...): ')
                 # irá passar o resultado e verificar erros
                 jogando = funcoes_erro.erro_3x3(a_lista, b_lista, c_lista, jogando)
                 n_linha = jogando[0]
                 n_coluna = jogando[1]
-                n_linha = int(n_linha)  # tipagem para int
-                n_coluna = int(n_coluna)  # tipagem para int
+                n_linha = int(n_linha)  
+                n_coluna = int(n_coluna)  
                 n_coluna = n_coluna - 1  # a contagem na lista começa do 0, por isso sub(1)
                 if n_linha == 1:
                     a_lista[n_coluna] = 0
@@ -56,8 +55,8 @@ def jogada_3x3(nome1, nome2, n_partidas):
                 jogando = funcoes_erro.erro_3x3(a_lista, b_lista, c_lista, jogando)
                 n_linha = jogando[0]
                 n_coluna = jogando[1]
-                n_linha = int(n_linha)  # tipagem para int
-                n_coluna = int(n_coluna)  # tipagem para int
+                n_linha = int(n_linha)  
+                n_coluna = int(n_coluna)  
                 n_coluna = n_coluna - 1  # a contagem na lista começa do 0, por isso sub(1)
                 if n_linha == 1:
                     a_lista[n_coluna] = 1
@@ -70,7 +69,6 @@ def jogada_3x3(nome1, nome2, n_partidas):
 
             # print tabuleito
             while i < 4:
-                # vai passar pelas 3 listas (a_lista, b_lista,c_lista)
                 # jogador1 == 0 == x
                 # jogador2 == 1 == o
                 if i == 1:
@@ -146,8 +144,6 @@ def jogada_4x4(nome1, nome2, n_partidas):
         # declaração de variáveis para lá na frente substituir por 0 ou 1
         # jogador1 == 0
         # jogador2 == 1
-        # jogador1 == jogadas(1,3,5,7,9)
-        # jogador2 == jogadas(2,4,6,8)
         a_lista = [11, 12, 13, 14]
         b_lista = [21, 22, 23, 24]
         c_lista = [31, 32, 33, 34]
@@ -171,8 +167,8 @@ def jogada_4x4(nome1, nome2, n_partidas):
                 jogando = funcoes_erro.erro_4x4(a_lista, b_lista, c_lista, d_lista, jogando)
                 n_linha = jogando[0]
                 n_coluna = jogando[1]
-                n_linha = int(n_linha)  # tipagem para int
-                n_coluna = int(n_coluna)  # tipagem para int
+                n_linha = int(n_linha)  
+                n_coluna = int(n_coluna)  
                 n_coluna = n_coluna - 1  # a contagem na lista começa do 0, por isso sub(1)
                 if n_linha == 1:
                     a_lista[n_coluna] = 0
@@ -188,8 +184,8 @@ def jogada_4x4(nome1, nome2, n_partidas):
                 jogando = funcoes_erro.erro_4x4(a_lista, b_lista, c_lista, d_lista, jogando)
                 n_linha = jogando[0]
                 n_coluna = jogando[1]
-                n_linha = int(n_linha)  # tipagem para int
-                n_coluna = int(n_coluna)  # tipagem para int
+                n_linha = int(n_linha)  
+                n_coluna = int(n_coluna)  
                 n_coluna = n_coluna - 1  # a contagem na lista começa do 0, por isso sub(1)
                 if n_linha == 1:
                     a_lista[n_coluna] = 1
@@ -203,7 +199,6 @@ def jogada_4x4(nome1, nome2, n_partidas):
 
             # print tabuleito
             while i < 5:
-                # vai passar pelas 3 listas (a_lista, b_lista,c_lista)
                 # jogador1 == 0 == x
                 # jogador2 == 1 == o
                 if i == 1:
@@ -288,8 +283,6 @@ def jogada_5x5(nome1, nome2, n_partidas):
         # declaração de variáveis para lá na frente substituir por 0 ou 1
         # jogador1 == 0
         # jogador2 == 1
-        # jogador1 == jogadas(1,3,5,7,9)
-        # jogador2 == jogadas(2,4,6,8)
         a_lista = [11, 12, 13, 14, 15]
         b_lista = [21, 22, 23, 24, 25]
         c_lista = [31, 32, 33, 34, 35]
@@ -315,8 +308,8 @@ def jogada_5x5(nome1, nome2, n_partidas):
                 jogando = funcoes_erro.erro_5x5(a_lista, b_lista, c_lista, d_lista, e_lista, jogando)
                 n_linha = jogando[0]
                 n_coluna = jogando[1]
-                n_linha = int(n_linha)  # tipagem para int
-                n_coluna = int(n_coluna)  # tipagem para int
+                n_linha = int(n_linha)  
+                n_coluna = int(n_coluna)  
                 n_coluna = n_coluna - 1  # a contagem na lista começa do 0, por isso sub(1)
                 if n_linha == 1:
                     a_lista[n_coluna] = 0
@@ -334,8 +327,8 @@ def jogada_5x5(nome1, nome2, n_partidas):
                 jogando = funcoes_erro.erro_5x5(a_lista, b_lista, c_lista, d_lista, e_lista, jogando)
                 n_linha = jogando[0]
                 n_coluna = jogando[1]
-                n_linha = int(n_linha)  # tipagem para int
-                n_coluna = int(n_coluna)  # tipagem para int
+                n_linha = int(n_linha)  
+                n_coluna = int(n_coluna)  
                 n_coluna = n_coluna - 1  # a contagem na lista começa do 0, por isso sub(1)
                 if n_linha == 1:
                     a_lista[n_coluna] = 1
