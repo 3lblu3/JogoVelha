@@ -1,5 +1,5 @@
 # JOGO DA VELHA
-Para executá-lo, você deve dar um 'run' no arquivo de nome 'main.py'.
+Tem como arquivo principal o 'main.py', não possui interface gráfica e é executado pelo terminal.
 Esse é um jogo interativo entre 2 jogadores; não possui interface de usuário, tudo é executado pelo terminal. <br>
 
 ## Detalhes
