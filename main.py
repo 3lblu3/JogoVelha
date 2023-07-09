@@ -1,5 +1,5 @@
 import jogo_funcoes
-# teste
+
 print("Bem-vindo(a,e) ao Jogo da Velha GTHC")
 print("Tipo de jogo: \n" + "a) 3X3 \n" + "b) 4X4 \nc) 5x5")
 
