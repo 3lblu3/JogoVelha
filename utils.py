@@ -5,7 +5,7 @@ def index_tab(tabuleiro, num):
     tabuleiro : list
         this the board.
         
-    num : TYPE
+    num : int
         board house index that you want.
 
     Returns
