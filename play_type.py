@@ -1,7 +1,6 @@
 import utils
 import winner
 
-
 def board3x3(name1, name2, n_matches):
     # player 1 == 0 == x
     # player 2 == 1 == o
