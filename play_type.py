@@ -1,8 +1,8 @@
-from utils import *
-from winner import *
+import utils
+import winner
 
 
-def playing3x3(name1, name2, n_matches):
+def board3x3(name1, name2, n_matches):
     # player 1 == 0 == x
     # player 2 == 1 == o
     score_x = 0
@@ -12,29 +12,29 @@ def playing3x3(name1, name2, n_matches):
                  [21, 22, 23], 
                  [31, 32, 33]]
         print(f'Esta é a {i + 1}°, okay!!? \n')
-        print_board(board)
+        utils.print_board(board)
 
         play_qty = 0
         while play_qty < 9:
             player = play_qty % 2
             if player == 0:
-                playing = erro(name=name1, is_input=True)
-                move = index_board(board, playing)
+                playing = utils.erro(name=name1, is_input=True)
+                move = utils.index_board(board, playing)
                 board[move[0]][move[1]] = 0
 
             else:
-                playing = erro(name=name2, is_input=True)
-                move = index_board(board, playing)
+                playing = utils.erro(name=name2, is_input=True)
+                move = utils.index_board(board, playing)
                 board[move[0]][move[1]] = 1
-            print_board(board, first_time=False)
+            utils.print_board(board, first_time=False)
 
             # is there a winner?
-            winner = winner3x3(board)
-            if winner == 0:
+            winner_match = winner.winner(board, 3)
+            if winner_match == 0:
                 score_x += 1
                 print(f'{name1}, você ganhou essa partida!!')
                 break
-            elif winner == 1:
+            elif winner_match == 1:
                 score_o += 1
                 print(f'{name2}, você ganhou essa partida!!')
                 break
@@ -55,7 +55,7 @@ def playing3x3(name1, name2, n_matches):
     print('-' * 60)
 
 
-def playing4x4(name1, name2, n_matches):
+def board4x4(name1, name2, n_matches):
     # player 1 == 0 == x
     # player 2 == 1 == o
     score_x = 0
@@ -66,29 +66,29 @@ def playing4x4(name1, name2, n_matches):
                   [31, 32, 33, 34], 
                   [41, 42, 43, 44]]
         print(f'Esta é a {i + 1}°, okay!!? \n')
-        print_board(board)
+        utils.print_board(board)
 
         play_qty = 0
         while play_qty < 16:
             player = play_qty % 2
             if player == 0:
-                playing = erro(name=name1, is_input=True)
-                move = index_board(board, playing)
+                playing = utils.erro(name=name1, is_input=True)
+                move = utils.index_board(board, playing)
                 board[move[0]][move[1]] = 0
 
             else:
-                playing = erro(name=name2, is_input=True)
-                move = index_board(board, playing)
+                playing = utils.erro(name=name2, is_input=True)
+                move = utils.index_board(board, playing)
                 board[move[0]][move[1]] = 1
-            print_board(board, first_time=False)
+            utils.print_board(board, first_time=False)
 
             # is there a winner?
-            winner = winner3x3(board)
-            if winner == 0:
+            winner_match = winner.winner(board, 4)
+            if winner_match == 0:
                 score_x += 1
                 print(f'{name1}, você ganhou essa partida!!')
                 break
-            elif winner == 1:
+            elif winner_match == 1:
                 score_o += 1
                 print(f'{name2}, você ganhou essa partida!!')
                 break
@@ -109,7 +109,7 @@ def playing4x4(name1, name2, n_matches):
     print('-' * 60)
 
 
-def playing5x5(name1, name2, n_matches):
+def board5x5(name1, name2, n_matches):
     # player 1 == 0 == x
     # player 2 == 1 == o
     score_x = 0
@@ -121,29 +121,29 @@ def playing5x5(name1, name2, n_matches):
                  [41, 42, 43, 44, 45],
                  [51, 52, 53, 54, 55]]
         print(f'Esta é a {i + 1}°, okay!!? \n')
-        print_board(board)
+        utils.print_board(board)
 
         play_qty = 0
         while play_qty < 9:
             player = play_qty % 2
             if player == 0:
-                playing = erro(name=name1, is_input=True)
-                move = index_board(board, playing)
+                playing = utils.erro(name=name1, is_input=True)
+                move = utils.index_board(board, playing)
                 board[move[0]][move[1]] = 0
 
             else:
-                playing = erro(name=name2, is_input=True)
-                move = index_board(board, playing)
+                playing = utils.erro(name=name2, is_input=True)
+                move = utils.index_board(board, playing)
                 board[move[0]][move[1]] = 1
-            print_board(board, first_time=False)
+            utils.print_board(board, first_time=False)
 
             # is there a winner?
-            winner = winner3x3(board)
-            if winner == 0:
+            winner_match = winner.winner(board, 5)
+            if winner_match == 0:
                 score_x += 1
                 print(f'{name1}, você ganhou essa partida!!')
                 break
-            elif winner == 1:
+            elif winner_match == 1:
                 score_o += 1
                 print(f'{name2}, você ganhou essa partida!!')
                 break
