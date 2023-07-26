@@ -2,7 +2,6 @@ import play_type as play
 
 def erro(name=str, is_input=False):
     '''
-
     Parameters
     ----------
     name : str, optional
