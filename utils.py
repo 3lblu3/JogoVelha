@@ -38,6 +38,10 @@ def print_board(board, first_time=True):
     board : list
         it prints the game board.
 
+    first_time : boolean, optional
+        The default is True.
+        first time that printing the board.
+
     Returns
     -------
     None.
@@ -100,6 +104,15 @@ def board():
     return board_type
 
 def name():
+    '''
+    Returns
+    -------
+    name1 : str
+
+    name2 : str
+
+    (str, str): it's the (player1, player2)'
+    '''
     name1 = input('Jogador 1, qual é seu nome? ')
     name2 = input('Jogador 2, qual é seu nome? ')
 
