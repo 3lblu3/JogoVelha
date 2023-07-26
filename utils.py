@@ -96,8 +96,7 @@ def board():
 
     '''
     board_type = str(input('Selecione seu tabuleiro: '))
-    if board_type not in 'abc':
-        return board()
+    if board_type not in 'abc': return board()
     return board_type
 
 def name():
